@@ -21,16 +21,16 @@ let ImageStore = Reflux.createStore({
 	imagelist : [],
 	// cuando se inicialize llame a la function fetchList 
 	init : function () {
-		this.fetchList():
-	}
+		this.fetchList();
+	},
 	// fetchList al igual que esta en ImageActions, es el nombre de la accion que queremos que escuche
-	fecthList : function () {
+	fetchList : function () {
 		let tags = ['animals', 'nature', 'food', 'travel', 'cars', 'sport'];
 		let randomTag = tags[Math.floor(Math.random()*tags.length)];
 		// request ajax  hacia la API de flickr
 		$.ajax({
 			// url, el ${} se remplaza por el valor de randomTag
-			url : this.url + ´&tag=${randomTag}´,
+			url : this.url + `&tag=${randomTag}`,
 			dataType : 'jsonp',
 			jsonpCallback : 'jsonFlickrFeed',
 			cache : false,

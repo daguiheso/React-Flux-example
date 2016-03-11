@@ -7,7 +7,7 @@ import ImageGrid from './components/ImageGrid';
 import ImageActions from './actions/ImageActions';
 
 // 5 seconds
-setTimeout(() => {
+setInterval(() => {
 	ImageActions.fetchList();
 }, 5000)
 
