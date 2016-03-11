@@ -94,7 +94,7 @@ var ImageGrid = _react2.default.createClass({
 				this.state.imagestore.map(function (image) {
 					return _react2.default.createElement(
 						'div',
-						{ className: 'image' },
+						{ className: 'Wrapper' },
 						_react2.default.createElement(
 							'a',
 							{ href: image.link },

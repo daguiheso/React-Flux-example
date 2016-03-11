@@ -1,4 +1,12 @@
-.image {
-	width: 25%;
+#container {
+	max-width: 1060px;
+	margin: 0 auto;
+}
+.Wrapper {
 	display: inline-block;
+	margin: 5px;
+}
+.Wrapper img {
+	width: 200px;
+	height: 200px;
 }

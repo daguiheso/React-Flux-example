@@ -21,7 +21,7 @@ let ImageGrid = React.createClass({
 			return <div>
 				{
 					this.state.imagestore.map((image) => {
-						return <div className="image">
+						return <div className="Wrapper">
 							<a href={image.link}>
 								<img src={ image.media.m }/>
 							</a>
