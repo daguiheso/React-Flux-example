@@ -19,6 +19,10 @@ let ImageStore = Reflux.createStore({
 	url : 'https://api.flickr.com/services/feeds/photos_public.gne?format=json',
 	listenables : [ImageActions],
 	imagelist : [],
+	// cuando se inicialize llame a la function fetchList 
+	init : function () {
+		this.fetchList():
+	}
 	// fetchList al igual que esta en ImageActions, es el nombre de la accion que queremos que escuche
 	fecthList : function () {
 		let tags = ['animals', 'nature', 'food', 'travel', 'cars', 'sport'];
