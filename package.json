@@ -1,0 +1,8 @@
+{
+  "name": "Flux-PhotosExample",
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "react": "^0.14.7",
+    "reflux": "^0.4.0"
+  }
+}
